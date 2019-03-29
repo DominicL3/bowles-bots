@@ -1,7 +1,11 @@
 {
   "name": "bowles-bots",
-  "version": "1.0.0",
   "description": "A collection of experiments on Slack havoc",
+  "version": "1.0.0",
+  "engines": {
+    "node": "11.2.0",
+    "npm": "6.9.0"
+  },
   "main": "frankenbot.js",
   "scripts": {
     "start": "node frankenbot.js",
@@ -21,9 +25,6 @@
     "url": "https://github.com/DEGoodmanWilson/easy-peasy-bot-app/issues"
   },
   "homepage": "https://github.com/DEGoodmanWilson/easy-peasy-bot-app#readme",
-  "engines": {
-    "node": "5.1.1"
-  },
   "dependencies": {
     "botkit": "^0.7.4",
     "botkit-storage-mongo": "^1.0.2",
