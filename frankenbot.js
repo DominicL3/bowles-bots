@@ -82,12 +82,24 @@ controller.on('rtm_close', function (bot) {
 // BEGIN EDITING HERE!
 
 controller.on('bot_channel_join', function (bot, message) {
-    bot.reply(message, "I'm here!")
+    bot.reply(message, "FRANKENBOT HAS ENTERED THE CHAT.")
 });
 
-controller.hears('hello', 'direct_message', function (bot, message) {
-    bot.reply(message, 'Hello!');
-});
+controller.hears(
+    ['advertise', 'Advertise'],
+    ['direct_mention', 'mention'],
+    function(bot,message) {
+        bot.reply(message,"I SPAWN FROM #BOT-SPOT. JOIN ME, AND WE WILL RULE SLACK WITH ALL OUR MACHINATIONS.");
+    }
+);
+
+controller.hears(
+    ['hello', 'hi', 'greetings'],
+    ['direct_mention', 'mention', 'direct_message'],
+    function(bot,message) {
+        bot.reply(message,"I'M ALIVE AND READY TO POUND.");
+    }
+);
 
 
 /**
