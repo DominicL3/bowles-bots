@@ -1,5 +1,6 @@
 /**
  * A Bot for Slack!
+ * @source D.E. Goodman-Wilson
  */
 
 
@@ -14,8 +15,8 @@ function onInstallation(bot, installer) {
             if (err) {
                 console.log(err);
             } else {
-                convo.say('I am a bot that has just joined your team');
-                convo.say('You must now /invite me to a channel so that I can be of use!');
+                convo.say("What's up, I'm on the scene now.");
+                convo.say('You must /invite me to a channel so that I can be of use');
             }
         });
     }
